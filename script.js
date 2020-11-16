@@ -131,24 +131,16 @@ function numLogo(){
     number.innerHTML++
     if (number.innerHTML < 51) {
         setTimeout(() => {numLogo()}, 100);
-    }
-    if (number.innerHTML > 50 && number.innerHTML < 61) {
+    } else if (number.innerHTML < 61) {
         setTimeout(() => {numLogo()}, 150);
-    }
-    if (number.innerHTML > 60 && number.innerHTML < 71) {
+    } else if (number.innerHTML < 71) {
         setTimeout(() => {numLogo()}, 190);
-    }
-    if (number.innerHTML > 70 && number.innerHTML < 81) {
+    } else if (number.innerHTML < 81) {
         setTimeout(() => {numLogo()}, 210);
-    }
-    if (number.innerHTML > 80 && number.innerHTML < 91) {
+    } else if (number.innerHTML < 91) {
         setTimeout(() => {numLogo()}, 250);
-    }
-    if (number.innerHTML > 90) {
+    } else if (number.innerHTML < 100) {
         setTimeout(() => {numLogo()}, 300);
-    }
-    if (number.innerHTML > 99) {
-        number.innerHTML = 100
     }
 }  
 numLogo()
